@@ -1,0 +1,10 @@
+{%- from 'datafs/settings.sls' import datafs with context %}
+
+{%- set all_devices = ['xvdb','xvdc'] + datafs.devices %}
+{%- for device in all_devices %}
+{%- if salt['partition.exists']('/dev/' + device) %}
+
+{{ device }}      /dev/{{ device }}  /root/.cryptfs_keyfile  luks
+
+{%- endif %}
+{%- endfor %}

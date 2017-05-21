@@ -1,0 +1,67 @@
+services:
+  test:
+    datafs:
+      ebs:
+        devices:
+          - sdc
+          - sdd
+        mount_point: /data
+datafs:
+  ebs:
+    devices:
+      - sdb
+      - sdc
+    mount_point: /data
+  config:
+    ebs:
+      backup_aws_key: Foo
+      backup_aws_secret: Bar
+    encryption_pass: super_secret123
+    encryption_key: |
+      mQINBFUuoeUBEADllTkrPGHmISCo2RHqC4TDiZ9mbskPQBs5WYAOgamE1v0grJE0
+      xrg0kW5qXOVoLBPjQwe3sAOEsmatVy30vNFoow2MQa9leytByGV4JB/ywzvqieHs
+      QvgD8LKc3nUMlRI7y7Mh265b0Mz9VcKv0P9uFpMbpi+9GOZ/HgpvRplDez+7GZRf
+      ZXdElh7yj3IN/uMTolXAtahZhAQWcfN5DoS6ASlSlz4nF4lag6ImrdaFcw4QgmvZ
+      UcMeES/sN3jWpuKo9ZXayL+nzB1kc/6YZqcy7C6bKkz5+wWxEeTeX/jJAndhhUYH
+      y9EM2b1wkhDyoGpEnrf7uP15VHfFgZpO0P4BONoyv4iDjWpXzUSFD08F/MUD7MPz
+      XdyeRNH95hpVKAIMyADaWONEwGkeQ+wDECcrK/Wh1nFHBNoeht23g053eJCGvlTi
+      IME0SgoR+psHKhqVnrJ9AX7+7D80Nn+tiqUVuOVBccVns7iACP9Z8hKNoOnSqP+v
+      XC6NAcmCOZe8/Ideow0ggAlfl0ztmBfxWk1jF/L5VwdYza4TIMOc4Mcx9zuaReVA
+      vLd6+tzNn0Wsfi3yXofJ8mYopnjRIHf9L+rc4pckfKEmh97nZBuAVBNjVAfQqo34
+      oaRM6ql9tsJDaK3+dWjKrwl3uZFuiajn8LocFSXBKLzKzG6Uogh0NZcoGQARAQAB
+      tB9qb2Ugc2htbyAoZm9vKSA8ampodUBnbWFpbC5jb20+iQI+BBMBAgAoBQJVLqHl
+      AhsDBQkB4TOABgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRBK7Txo36M1JYfH
+      D/96EqvbobYoZMqVDUkCmV1IOYPNgw7B9SeKF59kvpO9Wdb0lPolfNJsWwpxo0Qn
+      weV/fiLCqtWtmpFL4Ze7gt2RktKVHzDEiQyzD0u1cgfvLKrcUh8mnJrfFUZmhqFp
+      gfxV+04ZlC+lkqDZPFqrudhLCADO8wniGq2QG0dq3qNSw7awc7mLEWB7UrnHvuPH
+      rZ+YZQHlnl9UJEHnUFzCxFeK2EYJIiYMJACr15beJavvvR8kJWhtX5ZNjJTMJga5
+      Uk5gIt+XG1TQh2T+WKzQ11q/aTopDWncyuMMzJTJ/ynd9wRInU1/puuZ+umZVVFz
+      pgFM4Cu8EybJNCi8CMRs7tdGBB5A1469Sqxijvuy/GzVI/q5Dmn3l8O34Mohvaa6
+      69h89k2kguMR/y58qyT/wzsoBQbxErSdYGTleOgcPOBEdZwv62O7ipbDyTTyvo3J
+      3ddkg9JkvbI4Javau5NcOs7jXgPaCz8YEYzvMU1IOi4g8OM5wPE1rcBDW4CnTB+5
+      NfD/o1Fc6qwGfeBNlMmxW71Qu82uhJ7kvPNlz0YGCJ6HAKqK8kXzo5FBuxp86wf1
+      MmzFk4ZaUv1h9vop9WBt6z5B4m9IbZDabKNnpzAKjrVsKfvi2oTZV0VhJtYTEpBu
+      xSiqj6ay3mu4AuOwZp9vk246wuoCWG9O4PlVqgqp8CHHfbkCDQRVLqHlARAAxZ8K
+      9mQY0de3X+CeHg0Mv7GhUhoAkiwRpdRQ1HdAbvdHkpaj/Ol/OraLxzAlHchGaZV0
+      +x4MjqT6eyJmnrAQUF77dHk/bcFcZxEQfCyVjqx330fZfzQfXcNfck4ASkO+Nphz
+      d32pisCzA1q62M3orpL5k8iFF+xfgg6rXF9Ua5TDEohEAL/sh+ytol6BMJ1u/7G9
+      fK4aZwgx++WZE3Xh2mltayEYv8JCsX9gajnUQHQMB+9gYk0kXU0pPaZZX3mGelbW
+      fPT0qsXhZMDoBQ35PLGr+TG9AjGGR+xnRD2JK9qUS14/mI2bHXEcRh2lF5L6JSqh
+      eA1M1SsWVAOTwwpEzyBLxgJe8gHN8U1+E91UBtepx3KxQXg+ieHrMBn3bm/bwb7M
+      1CS38bLJ+QqluWSxGaVQjdYUPp8jrZ66vKK+/OyQswsSF6hcI+lz/QKfE/3HBZBS
+      yjUHJls0sonl5cG0xZxqAArFLmcA9UZSuqTtCAaB/RfMoOGTBWlYmTDKIOafStcg
+      To6bJmTAQYs/bZiOAuNtfdJNKMkFtWKEBbLgmKmIctlpYOaFMsv3d3c7rXR1D+CT
+      MgVJW7fxj/hWuKaNVeZFmj4IFyifNzmgAVHP+MF24DoJr6Cn071m3cbAnpwDMc63
+      bDYpEKcTNoYrBKmiAe+6kEqNEGZwIDpoOne14RkAEQEAAYkCJQQYAQIADwUCVS6h
+      5QIbDAUJAeEzgAAKCRBK7Txo36M1JbDKD/0XZe0sbxanxEf2d91GDHfA5nzJdCBk
+      XxQ1czRPGJSGunZSfoCO2DfZLivs6zrWAjj0CbewRcsHYvGvE0aNGILfyyb/fUIN
+      DsUrJi0nasMDL6iMzGvOOlEJBA7uNMhtF3nJ/+xHmO+rxy0Rm5t4HCg7Q92E52de
+      WwK2Mtl2FgnlSEu2lLsxxt80sHQEuvjlhY/XKLXgwgK0hMRKRWKy/MZAIeUVfsiu
+      UijRaFIxDwYZwNCEcNho99o7TzKN0liIkk3p3r97jTs55flwC1y+Y4/B+odQafPk
+      W8cJJQ2bmIAfHrvpyy32YufSBNtOLn6xMv/y52h3rCq544/GrnyaSG8oB3F6ShMD
+      iquRse7rvXAzFNKUUONWLnIA7hOEnHtZoCmyZYztlIChDj9Elzuy4DDen57pu82s
+      dMQJ04nL4/8dQmEHcqVDL3BPqsPN49LJEqOn4tS9jwI1ukNir0bbSxN3Kw/DDWZf
+      dHqOpCogv4Hhq4PeKjKr8Ory2Prqb0cdunUsI03vHJQzS7+AL0szE4Cjrc1FvIQR
+      A5hsXGOQCo6ZKCB0Rheqh9/Ase4vcVN4ENzQtdqWHR59uf/Zn/ZM2Ht0u2CRA9V9
+      8jlGdeHyI1DvjEuqEn3ustsR6ld6eD9L/hrM2bSdZI3lHBpXqb4i7SnNvjDEKwka
+      cKqY6bAQN3MASA==

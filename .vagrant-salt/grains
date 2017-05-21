@@ -1,0 +1,3 @@
+server_type: datafs-vagrant
+env: base
+service: test
