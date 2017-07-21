@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :saltdeps do |deps|
-    deps.base_vagrantfile = "git@github.com:Ubiquiti-Cloud/salt-vagrant-base.git"
+    deps.base_vagrantfile = "git@github.com:tyauvil/salt-vagrant-base.git"
     deps.checkout_path =  "./.vagrant-salt/deps"
   end
 
